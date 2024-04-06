@@ -325,7 +325,7 @@ namespace Always_On_Server
                     //warp farmer on button press
                     if (Game1.player.currentLocation is FarmHouse)
                     {
-                        Game1.warpFarmer("Farm", 64, 15, false);
+                        Game1.warpFarmer("Farm", 84, 12, false);
                     }
                     else
                     {
@@ -961,7 +961,7 @@ namespace Always_On_Server
                             if (Game1.player.currentLocation is FarmHouse)
                             {
                                 this.SendChatMessage("Warping to Farm.");
-                                Game1.warpFarmer("Farm", 64, 15, false);
+                                Game1.warpFarmer("Farm", 84, 12, false);
                             }
                             else
                             {
@@ -1302,7 +1302,7 @@ namespace Always_On_Server
                     //go outside
                     if (currentTime == 640)
                     {
-                        Game1.warpFarmer("Farm", 64, 15, false);
+                        Game1.warpFarmer("Farm", 84, 12, false);
                     }
                     //get fishing rod (standard spam clicker will get through cutscene)
                     if (currentTime == 900 && !Game1.player.eventsSeen.Contains("739330"))
